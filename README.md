@@ -88,9 +88,9 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 |model|mAP(normal)|mAP(SphereNet)|
 |:------:|:---:|:---:|
 |Faster R-CNN<br/>(reset101)|16.4|-|
-|YOLOv3<br/>(darknet53)|20.1|-|
+|YOLOv3<br/>(darknet53)|**20.1**|-|
 |DETR<br/>(resnet50)|14.8|9.3|
-|CenterNet<br/>(DLA34-DCN)|14.9|-|
+|CenterNet<br/>(DLA34-DCN)|14.9|9.4|
 |CenterNet<br/>(hardnet68)|14.2|-|
 
 
@@ -111,13 +111,22 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 |DETR<br/>(resnet50)|12.0|11.x|
 
 
-## Dicussion
+## Demo
 
+
+
+## Discussion
 
 I'd tried to reproduce the result of [『360-Indoor』](https://aliensunmin.github.io/project/360-dataset/), but only YOLO was reproduced, the other models, Faster R-CNN, Mask R-CNN was degenerated.
 
-The best model is "**YOLOv3**".
+The best model is "**YOLOv3**". Maybe, its because the YOLOv3 is robust to **generalization**. (Throught all the experiments, I'd used COCO pre-trained model.)
 
-The overall mAP was degenerated when applying omni-type kernsl. 
+Despite, the omni-type kernels work well on the classification task, but on the detection task, the overall mAP was degenerated when applying omni-type kernels. To figure out the solution, I'd tried to do several things.
 
-Bad Performance on small objects.
+- check gradients and parameters
+- check overfitting on small size samples
+- check hyper-parameters
+
+But, the none of them solve the degeneration 😥.
+
+In overall experiements, the performance was bad on **small objects**: cup, phone, wine glas, etc.
