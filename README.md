@@ -12,7 +12,7 @@ Work with 『360-Indoor』 Dataset
 
 👉 [360-Indoor: Towards Learning Real-World Objects in 360° Indoor Equirectangular Images](https://aliensunmin.github.io/project/360-dataset/)
 
-And to test my new type of kernels, I invented new dataset from the 『360-Indoor』 Dataset: "Mollweide360", "Adaptive360"
+And to test my new type of kernels, I invented new dataset from the 『360-Indoor』 Dataset: "Mollweide360", "Adaptive360".
 
 ### Mollweide360 & Adaptive360 
 
@@ -87,7 +87,7 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 
 |model|mAP(normal)|mAP(SphereNet)|
 |:------:|:---:|:---:|
-|Faster R-CNN<br/>(reset101)|14.2|-|
+|Faster R-CNN<br/>(reset101)|16.4|-|
 |YOLOv3<br/>(darknet53)|20.1|-|
 |DETR<br/>(resnet50)|14.8|9.3|
 |CenterNet<br/>(DLA34-DCN)|14.9|-|
@@ -114,6 +114,10 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 ## Dicussion
 
 
-I'd tried to reproduce the result of [『360-Indoor』]((https://aliensunmin.github.io/project/360-dataset/), but only YOLO was reproduced, the other models, Faster R-CNN, Mask R-CNN was degenerated.
+I'd tried to reproduce the result of [『360-Indoor』](https://aliensunmin.github.io/project/360-dataset/), but only YOLO was reproduced, the other models, Faster R-CNN, Mask R-CNN was degenerated.
 
+The best model is "**YOLOv3**".
 
+The overall mAP was degenerated when applying omni-type kernsl. 
+
+Bad Performance on small objects.
