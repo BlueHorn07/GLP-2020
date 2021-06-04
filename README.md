@@ -119,14 +119,14 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
   <img src="/iamges/demo/centernet-demo-train.PNG"  style="float:left; width:48%;"> 
-  <img src="/iamges/demo/centernet-demo-test1.PNG" style="float:left; width:48%;">
+  <img src="/iamges/demo/centernet-test1.PNG" style="float:left; width:48%;">
 </div>
 
 ### SphereNet
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
   <img src="/iamges/demo/spherenet-demo-train.PNG"  style="float:left; width:48%;"> 
-  <img src="/iamges/demo/spherenet-demo-test1.PNG" style="float:left; width:48%;">
+  <img src="/iamges/demo/spherenet-test1.PNG" style="float:left; width:48%;">
 </div>
 
 ## Discussion
