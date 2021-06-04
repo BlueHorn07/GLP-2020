@@ -113,7 +113,17 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 
 ## Demo
 
+### Indoor360
 
+<div align="center">
+  <img src="/iamges/demo/centernet-demo-train.PNG" width=500>
+</div>
+
+### SphereNet
+
+<div align="center">
+  <img src="/iamges/demo/spherenet-demo-train.PNG" width=500>
+</div>
 
 ## Discussion
 
