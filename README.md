@@ -129,6 +129,8 @@ I tested five models of two-stage and one-stage detector. The code of models tha
   <img src="/iamges/demo/spherenet-test1.PNG" style="float:left; width:48%;">
 </div>
 
+Due to the degeneration some of objects are not detected on the SphereNet model.
+
 ## Discussion
 
 I'd tried to reproduce the result of [『360-Indoor』](https://aliensunmin.github.io/project/360-dataset/), but only YOLO was reproduced, the other models, Faster R-CNN, Mask R-CNN was degenerated.
