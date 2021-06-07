@@ -16,7 +16,10 @@ And to test my new type of kernels, I invented new dataset from the 『360-Indoo
 
 ### Mollweide360 & Adaptive360 
 
-
+<div align="center">
+  <img src="./images/dataset/mollweide-7fB0x.jpg" width="45%">
+  <img src="./images/dataset/adaptive-7fB0x.jpg" width="45%">
+</div>
 
 ## Model
 
@@ -50,7 +53,7 @@ Due to the implementation of dynamic sampling of Omni-type kernsl, the first app
 This is more soft approach to apply the omni-type kernels. I applied this approach only on the [CenterNet](https://github.com/xingyizhou/CenterNet) model.
 
 <div align="center">
-  <img src="/iamges/centernet-omniConv.png" width=500>
+  <img src="/images/centernet-omniConv.png" width=500>
 </div>
 
 However, debugging the model and determining where to replace are the problems.
@@ -118,15 +121,15 @@ I tested five models of two-stage and one-stage detector. The code of models tha
 ### Indoor360
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
-  <img src="/iamges/demo/centernet-demo-train.PNG"  style="float:left; width:48%;"> 
-  <img src="/iamges/demo/centernet-test1.PNG" style="float:left; width:48%;">
+  <img src="./images/demo/centernet-demo-train.PNG"  style="float:left; width:48%;"> 
+  <img src="./images/demo/centernet-test1.PNG" style="float:left; width:48%;">
 </div>
 
 ### SphereNet
 
 <div class="img-wrapper" style="display:flex; justify-content:center; align-items:center;">
-  <img src="/iamges/demo/spherenet-demo-train.PNG"  style="float:left; width:48%;"> 
-  <img src="/iamges/demo/spherenet-test1.PNG" style="float:left; width:48%;">
+  <img src="./images/demo/spherenet-demo-train.PNG"  style="float:left; width:48%;"> 
+  <img src="./images/demo/spherenet-test1.PNG" style="float:left; width:48%;">
 </div>
 
 Due to the degeneration some of objects are not detected on the SphereNet model.
